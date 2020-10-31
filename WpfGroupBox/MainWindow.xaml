@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfGroupBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGroupBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="261.37" Width="480.685">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Column="0" FontSize="27" Header="Выберете цвет:"  Padding="5">
+            <StackPanel>
+                <RadioButton x:Name="radBtnGreen" Margin="3" Content="зелёный" Checked="radBtnGreen_Checked" />
+                <RadioButton x:Name="radBtnYellow" Margin="0,3,3,3" Content="жёлтый" HorizontalAlignment="Right" Width="209" Checked="radBtnYellow_Checked" />
+                <RadioButton x:Name="radBtnOrange" Margin="3" Content="оранжевый" Checked="radBtnOrange_Checked" />
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="groupBoxColor" Height="130" Width="130" Grid.Column="1">
+
+        </GroupBox>
+    </Grid>
+</Window>
